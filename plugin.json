@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "meeting-intelligence-dashboard",
+  "version": "1.0.0",
+  "description": "Create interactive HTML dashboards from Outlook Webex meeting summaries, organized by themes, weeks, actions, and meetings.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Meeting Intelligence Dashboard",
+        "shortDescription": "Turn Outlook Webex summaries into an interactive dashboard.",
+        "longDescription": "Build a self-contained HTML dashboard with weekly executive briefs, cross-meeting themes, a searchable action register, and meeting links to source details.",
+        "developerName": "Personal",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Create an HTML dashboard from my Outlook Webex meeting summaries.",
+          "Refresh the Meeting Intelligence Dashboard for the date range I specify."
+        ]
+      }
+    }
+  }
+}
